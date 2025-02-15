@@ -3,9 +3,8 @@ import { list, renderGallery } from "./js/render-function";
 
 const refs = {
     form: document.querySelector('.form'),
-    button: document.querySelector('.form-button'),
 }
-const { form, button } = refs;
+const { form } = refs;
 
 export let inputData;
 form.addEventListener('submit', (evt) => {
