@@ -7,7 +7,7 @@ export const list = document.querySelector('.gallery');
 
 export const renderGallery = (value) => {
     if (value.hits.length === 0) {
-        iziToast.info({
+        iziToast.error({
             title: 'Sorry, there are no images matching',
             titleColor: '#fafafb',
             titleSize: '16px',
@@ -18,7 +18,7 @@ export const renderGallery = (value) => {
             messageLineHeight: '1.5',
             backgroundColor: '#ef4040',
             position: 'topRight',
-            iconUrl: './icon.svg',
+            iconUrl: 'https://icomoon.io/images/ultimate/cancel.png',
             theme: 'dark',
             maxWidth: '432px',
         });
