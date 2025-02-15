@@ -9,7 +9,7 @@ const instance = axios.create({
 export async function requestData() {
     try {
         Pace.start();
-        const response = await instance.get("/api", {
+        const response = await instance.get("/api/", {
             params: {
                 key: "48823669-6a3dc21720ce29a0e321c0b37",
                 q: `${inputData}`,
