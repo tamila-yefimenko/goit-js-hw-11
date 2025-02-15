@@ -24,12 +24,13 @@ export const renderGallery = (value) => {
     }
     const imageMarkUp = value.hits.map((hit) => {
         const { largeImageURL, webformatURL, tags, likes, views, comments, downloads } = hit;
+        const uniqTags = tags.split(', ').filter((el, index, arr) => arr.indexOf(el) === index).join(', ');
         return `<li class="gallery-item">
                     <a class="gallery-link" href="${largeImageURL}">
                         <img
                             class="gallery-image"
                             src="${webformatURL}"
-                            alt="${tags}"
+                            alt="${uniqTags}"
                         />
                     </a>
                     <ul class="wrapper">
