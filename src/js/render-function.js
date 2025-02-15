@@ -18,7 +18,6 @@ export const renderGallery = (value) => {
             messageLineHeight: '1.5',
             backgroundColor: '#ef4040',
             position: 'topRight',
-            iconUrl: 'https://icomoon.io/images/ultimate/cancel.png',
             theme: 'dark',
             maxWidth: '432px',
         });
